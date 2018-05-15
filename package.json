@@ -61,8 +61,5 @@
     "sinon": "^4.5.0",
     "sinon-chai": "^3.0.0",
     "sinon-stub-promise": "^4.0.0"
-  },
-  "dependencies": {
-    "npm": "^5.8.0"
   }
 }
