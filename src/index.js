@@ -9,5 +9,5 @@ module.exports = {
     searchTracks,
     getAlbum,
     getAlbums,
-    getAlbumTracks
-}
+    getAlbumTracks,
+};
