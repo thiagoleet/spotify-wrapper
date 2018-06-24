@@ -3,7 +3,6 @@ import API_URL from './config';
 import toJSON from './utils';
 
 export const getAlbum = (id) => {
-    console.log(API_URL)
     fetch(`${API_URL}/albums/${id}`)
         .then(toJSON);
 };
