@@ -1,6 +1,6 @@
 import { API_URL } from '../src/config'
 import chai, { expect } from 'chai';
-import { getAlbum, getAlbums, getAlbumTracks } from '../src/Album';
+import { getAlbum, getAlbums, getAlbumTracks } from '../src/album';
 import sinon from 'sinon';
 import sinonChai from 'sinon-chai';
 import sinonStubPromise from 'sinon-stub-promise';
