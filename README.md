@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/thiagofmleite/spotify-wrapper.svg?branch=master)](https://travis-ci.org/thiagofmleite/spotify-wrapper)
 
+[![Coverage Status](https://coveralls.io/repos/github/thiagofmleite/spotify-wrapper/badge.svg?branch=master)](https://coveralls.io/github/thiagofmleite/spotify-wrapper?branch=master)
+
 A wrapper to work with the [Spotify Web API](https://developer.spotify.com/web-api/).
 
 ## Browser Support
