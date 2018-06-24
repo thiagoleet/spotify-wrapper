@@ -9,7 +9,7 @@ sinonStubPromise(sinon);
 
 global.fetch = require('node-fetch');
 
-import { search, searchAlbuns, searchArtists, searchPlaylists, searchTracks } from '../src/search';
+import { search, searchAlbums, searchArtists, searchPlaylists, searchTracks } from '../src/search';
 
 describe('Search', () => {
     let stubbedFetch;
@@ -27,7 +27,7 @@ describe('Search', () => {
     describe('smoke tests', () => {
 
         // search (genérico) + de um tipo
-        // searchAlbuns
+        // searchAlbums
         // searchArtists
         // searchTracks
         // searchPlaylists
@@ -36,8 +36,8 @@ describe('Search', () => {
             expect(search).to.exist;
         });
 
-        it('should exist the searchAlbuns method', () => {
-            expect(searchAlbuns).to.exist;
+        it('should exist the searchAlbums method', () => {
+            expect(searchAlbums).to.exist;
         });
         it('should exist the searchArtists method', () => {
             expect(searchArtists).to.exist;
@@ -90,12 +90,12 @@ describe('Search', () => {
 
     describe('searchAlbums', () => {
         it('should call fetch function', () => {
-            const albums = searchAlbuns('Incubus');
+            const albums = searchAlbums('Incubus');
             expect(stubbedFetch).to.have.been.calledOnce;
         });
 
         it('should call fetch with the correct URL', () => {
-            const albums = searchAlbuns('Incubus');
+            const albums = searchAlbums('Incubus');
             expect(stubbedFetch).to.have.been
                 .calledWith(`${API_URL}/search?q=Incubus&type=album`);
         });
