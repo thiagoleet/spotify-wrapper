@@ -1,10 +1,14 @@
-import { search, searchAlbuns, searchArtists, searchPlaylists, searchTracks } from './search';
+import { search, searchAlbums, searchArtists, searchPlaylists, searchTracks } from './search';
 import { getAlbum, getAlbumTracks, getAlbums } from './album';
+import API_URL from './config'
+import toJSON from './utils'
 
 module.exports = {
+    API_URL,
+    toJSON,
     search,
     searchArtists,
-    searchAlbuns,
+    searchAlbums,
     searchPlaylists,
     searchTracks,
     getAlbum,

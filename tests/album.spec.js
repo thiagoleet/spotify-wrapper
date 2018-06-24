@@ -95,7 +95,7 @@ describe('Album', () => {
 
     });
 
-    describe('getAlbuns', () => {
+    describe('getAlbums', () => {
         // verifica se o fetch ocorre
         it('should call fetch method', () => {
             const album = getAlbums();
