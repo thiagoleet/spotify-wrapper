@@ -7,6 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+    <div id="albums"></div>
+
     <script src="../dist/spotify-wrapper.umd.js"></script>
+    <script>
+        const spotify = new spotifyWrapper({
+            token: 'BQDHZvurn-6VkPAtJWjoRI1xhGKE8jv0_w7P_k4Vyg4dbnA_UbR1gVBWebuATfcL15U95rwctzSVx1-tXuHSAiwAf6xhnPYYaa5xvvCE3FEHUPT2bPSSK5lhV4WOU1fJ_Hl02a37OymQyaH8G-L8hKlt_Vc_pQ'
+        });
+
+        const albums = spotify.search.albums('Incubus');
+        const albumsEl = document.getElementById('albums');
+
+        albums
+            .then(data => {
+                markup = data.albums.items.map(item => 
+                    `<img src="${item.images[0].url}" alt="${item.name}" />`
+                ).join('');
+
+                albumsEl.innerHTML = markup;
+            });
+        
+    </script>
 </body>
 </html>
